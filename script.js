@@ -4,6 +4,7 @@ const debounceText = document.querySelector('.debounce')
 const throttleText = document.querySelector('.throttle')
 
 
+//debounce
 const debounce = (cb, delay) => {
     let timeout;
     return (...args) => {
@@ -13,6 +14,8 @@ const debounce = (cb, delay) => {
         }, delay)
     }
 }
+
+//throttling
 
 const throttle = ((cb, delay) => {
 
